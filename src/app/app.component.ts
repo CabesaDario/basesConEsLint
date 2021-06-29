@@ -14,14 +14,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   //lo que nosotros tenemos por pantalla en el navegador es una instancia
   //del AppComponent(es nuestro DOM)
-  public titulo: string = 'Contador App de Darío Ojeda Jurado';
-  public subtitulo: string = 'Siguiendo el curso de Fernando Herrera';
-  public numero: number = 0;
-  public   base: number = 5;
-
-  acumular( valor: number ){
-    this.numero += valor;
-  }
+  
 
  
 }
