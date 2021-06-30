@@ -6,7 +6,7 @@
     </li>
 </ul>
 
-<div>
+<div *ngIf="isVisibleBorrados">
     <h3>Héroes Borrados</h3>
     <ul>
         <li *ngFor="let heroe of heroesBorrados; let i = index">
