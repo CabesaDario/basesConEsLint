@@ -1,4 +1,4 @@
-<p>listado de heroes</p>
+<h1>listado de heroes</h1>
 
 <ul>
     <li *ngFor="let heroe of heroes; let i = index">
@@ -6,7 +6,9 @@
     </li>
 </ul>
 
-<div *ngIf="isVisibleBorrados">
+<div *ngIf="isVisibleBorrados; else noBorrado">
+    <!-- Ese noBorrado es una referencia local -->
+    <!--  no tiene contraparte del lado del html -->
     <h3>Héroes Borrados</h3>
     <ul>
         <li *ngFor="let heroe of heroesBorrados; let i = index">
@@ -14,6 +16,11 @@
         </li>
     </ul>
 </div>
+
+<ng-template #noBorrado>
+    <h3>No ha borrado nada</h3>
+</ng-template>
+
 
 
 <button (click)="borrarHeroe()">
