@@ -10,13 +10,13 @@ import { Component} from '@angular/core';
         <h3>La base es: <strong>{{ base }}</strong></h3>
 
         <!-- no se aconseja poner mucha lógica en el lado del template -->
-        <button (click) = "acumular( +base )"> + {{ base }}</button>
+        <button (click) = "acumular(-base)"> - {{ base }}</button>
 
 
         <h2>{{ numero }}</h2>
 
 
-        <button (click) = "acumular(-base)"> - {{ base }}</button>
+        <button (click) = "acumular(+base)"> + {{ base }}</button>
     
     `
 })
