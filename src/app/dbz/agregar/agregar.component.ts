@@ -29,6 +29,5 @@ export class AgregarComponent{
       poder: 0,
     };
   }
-
-  
+    
 }
